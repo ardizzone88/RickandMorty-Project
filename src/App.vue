@@ -1,27 +1,34 @@
+
 <template>
-  <div>
-    <h1>Rick And morty</h1>
+  <div class="container">
+    <h1>Rick And Morty</h1>
+    <FilterByStatus />
+    <FilterByName />
+    <ListCharacters />
   </div>
 </template>
 
 <script>
-
-
+import ListCharacters from '@/components/ListCharacters'
+import FilterByStatus from '@/components/FilterByStatus'
+import FilterByName from '@/components/FilterByName'
 export default {
   name: 'App',
   components: {
-    
+    ListCharacters,
+    FilterByStatus,
+    FilterByName
   }
 }
 </script>
 
 <style lang="scss">
 :root {
-  --background-body: #24282F;
+  --background-body: #272b33;
   --background-card: #3C3E44;
   --text-white: #FFFFFF;
-  --text-gray: #c0c0c0;
-  --text-orange: #FF9800;
+  --text-gray: #ebe2e2;
+  --text-orange: #e7b323;
 }
 * {
   box-sizing: border-box;

@@ -45,7 +45,10 @@ export default {
     background-color: var(--background-card);
     text-align: center;
     cursor: pointer;
-    &:hover {
+    &:hover { 
+      border: 1px solid #e7b323; 
+      transition: all 300ms ease-in-out;
+      background: var(--background-card-hover);
       color: var(--text-orange);
     }
   }

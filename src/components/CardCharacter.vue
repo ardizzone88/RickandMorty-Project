@@ -43,8 +43,11 @@ export default {
   cursor: pointer;
   transition: transform 200ms ease-in-out;
   height: 100%;
+
   &:hover {
     transform: scale(1.05);
+    border: 2px solid #e7b323;
+;
     h3 {
       color: var(--text-orange);
     }
